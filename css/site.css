@@ -1,8 +1,11 @@
 .body-content{
-  display:block;
-  height:100%;
-  weight:100%;
   font-size:14px;
+  font-family: montserrat,Arial,helvetica neue,Helvetica,sans-serif;
+}
+
+.horizontal {
+  background-color: #f9a39c;
+  margin-left: -10px;
 }
 
 .header{
@@ -12,17 +15,23 @@
 }
 
 .footer {
-  position:fixed;
-  bottom:0;
-  display:block;
-  height:30px;
-  width:100%;
-  background:#eee;
-  text-align:center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h2 {
   text-align: center;
+  color: #3b444f;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 64px;
 }
 
 .main-content{
@@ -30,8 +39,6 @@ h2 {
   margin-top:15px;
   margin-bottom:130px;
   padding-top:25px;
-  height:100%;
-  width:100%;
 }
 
 .logo {
@@ -57,6 +64,20 @@ ul {
   background-color: #333;
 }
 
+.pics-holder {
+  margin-top:2px;
+  display flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.images {
+  width: 30%;
+  height: 250px;
+  opacity: 1;
+}
+
 li {
   float: left;
 }
@@ -71,5 +92,115 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #fd2b82;
+}
+
+.images:hover {
+  opacity: 0.5;
+}
+
+.background {
+  overflow: hidden;
+  height: 600px;
+  width: 101%;
+  margin-top: 4px;
+  margin-left: -10px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  text-align: center;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  line-height: .9;
+  font-size: 6rem;
+
+}
+
+.center-word {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: .1rem;
+  line-height: 1;
+}
+
+.para-hiking {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+p {
+  text-align: center;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-style: italic;
+  letter-spacing: .1rem;
+  color: #2c3643;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.55556;
+  -webkit-font-smoothing: antialiased;
+}
+
+.para-holder {
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.para-image {
+  height: 100%;
+  width: 100px;;
+}
+
+.untitle {
+  color: #2c3643;
+  font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+  font-size: 1.3rem;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased;
+}
+
+.link {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(59, 68, 79);
+  text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: solid 0.5px lightgrey;
+}
+
+.article-session {
+  width: 70%;
+}
+
+.article-img {
+  height: 120px;
+  width: 120px;
+}
+
+.video {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
